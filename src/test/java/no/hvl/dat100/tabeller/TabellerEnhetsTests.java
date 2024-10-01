@@ -85,7 +85,7 @@ class TabellerEnhetsTests {
 		assertFalse(tabell2 == reversert2);
 		assertArrayEquals(tabell2, reversert2);
 		
-		assertFalse(tabell1 == reversert1);
+		assertFalse(tabell3 == reversert3); // Endra frå assertFalse(tabell1 == reversert1);
 		assertArrayEquals(tabell3, reversert3);
 	}
 
