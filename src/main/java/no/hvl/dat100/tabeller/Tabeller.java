@@ -21,10 +21,11 @@ public class Tabeller {
 		for (int i = 0; i < tabell.length; i++) {
 			res += tabell[i];
 			if (i != tabell.length-1 ) {
-				res += ", ";
+				res += ",";
 			}
 		}
 		res += "]";
+		System.out.println("Test" + res);;
 		return res;
 	}
 
@@ -62,7 +63,7 @@ public class Tabeller {
 	public static int[] reverser(int[] tabell) {
 		int[] nyTabell = new int[tabell.length];
 		int idx = tabell.length-1;
-		for (int i = 0; i < tabell.length i++) {
+		for (int i = 0; i < tabell.length; i++) {
 			nyTabell[i] = tabell[idx--];
 		}
 		return nyTabell;
@@ -70,10 +71,10 @@ public class Tabeller {
 
 	// g)
 	public static boolean erSortert(int[] tabell) {
-		if (tabell.lengt < 2) {
+		if (tabell.length < 2) {
 			return true;
 		} 
-		for (int i = 1; i tabell.length; i++) {
+		for (int i = 1; i < tabell.length; i++) {
 			if( tabell[i] < tabell[i-1]) {
 				return false;
 			}
@@ -88,8 +89,8 @@ public class Tabeller {
 			nyTabell[i] = tabell1[i];  
 		}
 		for (int j = 0; j < tabell2.length; j++) {
-			nyTabell[(tabell1.length-1)+j] = tabell2[j];
+			nyTabell[tabell1.length+j] = tabell2[j];
 		}
-
+		return nyTabell;
 	}
 }
