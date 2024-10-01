@@ -12,6 +12,7 @@ public class Tabeller {
 			}
 		}
 		res += "]";
+		System.out.println(res);
 	}
 
 	// b)
