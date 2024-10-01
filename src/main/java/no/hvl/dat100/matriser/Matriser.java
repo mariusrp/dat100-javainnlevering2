@@ -47,10 +47,8 @@ public class Matriser {
 			}
 		}
 		else {
-			System.out.println(false);
 			return false;
 		}
-		System.out.println(true);
 		return true;
 	}
 	
